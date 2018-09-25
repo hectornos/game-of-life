@@ -10,6 +10,10 @@ narrative "story description", {
 	so_that "that I can study how the rules behave"
 }
 
+examples "Grid examples with '#{initialGrid}' and #{expectedGrid}", {	
+  initialGrid  = ["...\n...\n...\n",   "...\n.*.\n...\n",   "...\n**.\n...\n"]	
+  expectedGrid = ["...\n...\n...\n\n",   "...\n...\n...\n\n",   "...\n...\n...\n\n"]	
+}	
 
 scenario "A universe seeded with an initial grid of #initialGrid will spawn a grid like #expectedGrid",{
 	given "a universe seeded with #initialGrid", {
