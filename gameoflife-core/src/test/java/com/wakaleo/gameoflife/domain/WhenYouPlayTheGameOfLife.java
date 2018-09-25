@@ -19,7 +19,7 @@ public class WhenYouPlayTheGameOfLife {
 
         String expectedNextGrid = "...\n" + 
                                   "...\n" + 
-                                  "...\n";
+                                  "...\n\n";
 
         Universe theUniverse = new Universe(seededWith(initialGrid));
         theUniverse.createNextGeneration();
@@ -36,7 +36,7 @@ public class WhenYouPlayTheGameOfLife {
 
         String expectedNextGrid = "...\n" + 
                                   "...\n" + 
-                                  "...\n";
+                                  "...\n\n";
 
         Universe theUniverse = new Universe(seededWith(initialGrid));
         theUniverse.createNextGeneration();
@@ -53,7 +53,7 @@ public class WhenYouPlayTheGameOfLife {
 
         String expectedNextGrid = "**.\n" + 
                                   "**.\n" + 
-                                  "...\n";
+                                  "...\n\n";
 
         Universe theUniverse = new Universe(seededWith(initialGrid));
         theUniverse.createNextGeneration();
